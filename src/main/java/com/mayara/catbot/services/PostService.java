@@ -1,8 +1,6 @@
 package com.mayara.catbot.services;
 
-
 import com.fasterxml.jackson.databind.ObjectMapper;
-
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonPrimitive;
@@ -10,7 +8,6 @@ import com.mayara.catbot.models.FactsResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpHeaders;
 import org.apache.http.client.methods.HttpPost;
-
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -47,9 +44,6 @@ public class PostService {
 
     @Value("${twitter.oauth}")
     private String OAUTH_STRING;
-
-    public PostService() {
-    }
 
     @Scheduled(cron = "0 0 12,18 * * ?")
     public void orquestraPostNoTwitter() {
