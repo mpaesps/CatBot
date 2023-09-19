@@ -1,4 +1,4 @@
-package com.mayara.catbot.entities;
+package com.mayara.catbot.models;
 
 import lombok.Data;
 
