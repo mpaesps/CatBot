@@ -51,7 +51,6 @@ public class PostService {
     public PostService() {
     }
 
-    // @Scheduled(fixedRate = 100000)
     @Scheduled(cron = "0 0 12,18 * * ?")
     public void orquestraPostNoTwitter() {
 
